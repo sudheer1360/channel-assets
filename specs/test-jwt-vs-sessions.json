@@ -1,0 +1,16 @@
+{
+  "kicker": "BACKEND  /  BUILD IN PUBLIC",
+  "scenes": [
+    {"voice": "JWT or sessions? Here is how to choose in thirty seconds.",
+     "lines": [{"t": "JWT or sessions?", "size": 120, "accent": true}, {"t": "Choose in 30 seconds", "size": 64}]},
+    {"voice": "Sessions keep the state on the server. A JWT carries it inside the token.",
+     "lines": [{"t": "Sessions", "size": 96, "accent": true}, {"t": "state lives on the server", "size": 60},
+               {"t": "JWT", "size": 96, "accent": true}, {"t": "state lives in the token", "size": 60}]},
+    {"voice": "The catch with a JWT: you can't easily log someone out before it expires.",
+     "lines": [{"t": "The catch", "size": 96, "accent": true}],
+     "code": "// token is valid until exp\nif (token.exp > now) allow();\n// no server-side logout"},
+    {"voice": "My rule: sessions for one server app, JWT for stateless APIs. Save this for your next auth decision.",
+     "lines": [{"t": "My rule", "size": 96, "accent": true}, {"t": "One server app: sessions", "size": 64},
+               {"t": "Stateless API: JWT", "size": 64}]}
+  ]
+}
