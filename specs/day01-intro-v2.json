@@ -1,0 +1,14 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Backend concepts, explained in under a minute.",
+     "lines": [{"t": "Backend concepts", "size": 112, "accent": true}, {"t": "explained in under a minute", "size": 64}]},
+    {"voice": "No hype. Just how things work, and the tradeoffs.",
+     "lines": [{"t": "No hype", "size": 112, "accent": true}, {"t": "how it works + the tradeoffs", "size": 60}]},
+    {"voice": "Coming up: JWT versus sessions, database indexes, and rate limiting.",
+     "lines": [{"t": "Coming up", "size": 100, "accent": true}, {"t": "JWT vs sessions", "size": 68},
+               {"t": "Database indexes", "size": 68}, {"t": "Rate limiting", "size": 68}]},
+    {"voice": "Follow for the backend stuff nobody teaches you.",
+     "lines": [{"t": "Follow for backend", "size": 100, "accent": true}, {"t": "nobody teaches you", "size": 72}]}
+  ]
+}

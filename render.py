@@ -139,7 +139,7 @@ def main(spec_path, out_path):
         ms = int(starts[i] * 1000)
         afc.append(f"[{base+i}:a]aresample=44100,adelay={ms}|{ms}[a{i}]")
     afc.append("".join(f"[a{i}]" for i in range(len(wavs))) +
-               f"amix=inputs={len(wavs)}:normalize=0,apad,atrim=0:{total},volume=1.4[mix]")
+               f"amix=inputs={len(wavs)}:normalize=0,apad,atrim=0:{total},volume=1.2,alimiter=limit=0.85:level=disabled[mix]")
     run(cmd + ["-filter_complex", ";".join(fc + afc), "-map", f"[{prev}]", "-map", "[mix]",
                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-t", str(total), out_path])
     print(f"done: {out_path} ({total}s)")
