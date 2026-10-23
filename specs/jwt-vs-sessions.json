@@ -1,0 +1,21 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "JWT or sessions? The real difference is where the state lives.",
+     "lines": [{"t": "JWT or sessions?", "size": 120, "accent": true}, {"t": "where does the state live?", "size": 64}]},
+    {"voice": "A session keeps the login state on the server. A JWT carries it inside a signed token.",
+     "lines": [{"t": "Session", "size": 96, "accent": true}, {"t": "state on the server", "size": 60},
+               {"t": "JWT", "size": 96, "accent": true}, {"t": "state in the token", "size": 60}]},
+    {"voice": "Sessions are easy to revoke. Delete the record, and that user is logged out.",
+     "lines": [{"t": "Sessions", "size": 96, "accent": true}, {"t": "easy to revoke", "size": 64}],
+     "code": "sessions.delete(sessionId)\n// user is logged out now"},
+    {"voice": "A JWT stays valid until it expires. Logging out early needs extra work, like a blocklist.",
+     "lines": [{"t": "The JWT catch", "size": 96, "accent": true}],
+     "code": "{ sub: 42,\n  exp: 1700003600 }\n// valid until exp"},
+    {"voice": "One server-rendered app? Sessions are usually simpler. Many services or clients? A short-lived JWT fits well.",
+     "lines": [{"t": "One server app", "size": 72, "accent": true}, {"t": "sessions", "size": 64},
+               {"t": "Many services", "size": 72, "accent": true}, {"t": "short-lived JWT", "size": 64}]},
+    {"voice": "Save this for the next time you pick auth.",
+     "lines": [{"t": "Save this", "size": 110, "accent": true}, {"t": "for your next auth decision", "size": 60}]}
+  ]
+}
