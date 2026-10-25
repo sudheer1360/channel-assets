@@ -1,0 +1,20 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "401 or 403? Most APIs mix these up.",
+     "lines": [{"t": "401 or 403?", "size": 120, "accent": true}, {"t": "most APIs mix them up", "size": 60}]},
+    {"voice": "401 means we don't know who you are. Missing or bad credentials.",
+     "lines": [{"t": "401", "size": 120, "accent": true}, {"t": "who are you?", "size": 64}],
+     "code": "401 Unauthorized\n// no valid login"},
+    {"voice": "403 means we know who you are, but you're not allowed to do this.",
+     "lines": [{"t": "403", "size": 120, "accent": true}, {"t": "known, but not allowed", "size": 64}],
+     "code": "403 Forbidden\n// logged in, no access"},
+    {"voice": "Same idea for input. 400 means the request is malformed. 422 means it's well formed, but the values are invalid.",
+     "lines": [{"t": "400", "size": 96, "accent": true}, {"t": "malformed request", "size": 60},
+               {"t": "422", "size": 96, "accent": true}, {"t": "valid shape, invalid values", "size": 60}]},
+    {"voice": "Some teams use 400 for both, and that's fine. Just be consistent, and document it.",
+     "lines": [{"t": "Pick a rule", "size": 96, "accent": true}, {"t": "stay consistent", "size": 64}]},
+    {"voice": "Save this for the next time you design an API.",
+     "lines": [{"t": "Save this", "size": 110, "accent": true}, {"t": "for your next API", "size": 60}]}
+  ]
+}
