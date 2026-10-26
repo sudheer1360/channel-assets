@@ -1,0 +1,19 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Your page is slow, and the database isn't busy. Check for N plus one.",
+     "lines": [{"t": "N+1 queries", "size": 120, "accent": true}, {"t": "slow page, quiet database", "size": 60}]},
+    {"voice": "You fetch a list of orders. Then you loop, and fetch the customer for each one.",
+     "lines": [{"t": "1 query for the list", "size": 64}, {"t": "N queries in a loop", "size": 64, "accent": true}],
+     "code": "orders = get_orders()\nfor o in orders:\n  get_customer(o.id)"},
+    {"voice": "A hundred orders means a hundred and one round trips. Each one is small, but they add up.",
+     "lines": [{"t": "100 orders", "size": 90, "accent": true}, {"t": "101 round trips", "size": 70}]},
+    {"voice": "Fix it by fetching everything at once, with a join, or one query using an IN list.",
+     "lines": [{"t": "2 queries, not 101", "size": 80, "accent": true}, {"t": "join or IN list", "size": 64}],
+     "code": "SELECT * FROM customers\nWHERE id IN (1, 2, 3);"},
+    {"voice": "Not every loop is a problem. With ten rows, it might not matter. Measure first.",
+     "lines": [{"t": "Small N? Fine.", "size": 90, "accent": true}, {"t": "measure first", "size": 64}]},
+    {"voice": "Follow for the backend stuff nobody teaches you.",
+     "lines": [{"t": "Follow", "size": 110, "accent": true}, {"t": "for more backend", "size": 60}]}
+  ]
+}
