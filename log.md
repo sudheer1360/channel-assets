@@ -8,3 +8,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | jwt-vs-sessions | jwt-vs-sessions | videos/jwt-vs-sessions.mp4 | 2026-10-24 10:00 | 2026-10-24 16:00 | Scheduled in Metricool |
 | http-status-codes | http-status-codes | videos/http-status-codes.mp4 | 2026-10-26 10:00 | 2026-10-26 16:00 | Scheduled in Metricool |
 | n-plus-one-query | n-plus-one-query | videos/n-plus-one-query.mp4 | 2026-10-27 10:00 | 2026-10-27 16:00 | Scheduled in Metricool |
+| database-indexes | database-indexes | videos/database-indexes.mp4 | 2026-10-28 10:00 | 2026-10-28 16:00 | Scheduled in Metricool |
