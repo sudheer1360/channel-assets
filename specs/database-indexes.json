@@ -1,0 +1,21 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "An index makes reads fast. But it quietly makes every write slower.",
+     "lines": [{"t": "Database indexes", "size": 100, "accent": true}, {"t": "fast reads, slower writes", "size": 60}]},
+    {"voice": "An index is a sorted lookup structure. The database can jump to your row instead of scanning the whole table.",
+     "lines": [{"t": "A sorted lookup", "size": 76, "accent": true}, {"t": "jump, don't scan", "size": 64}],
+     "code": "CREATE INDEX idx_email\nON users (email);"},
+    {"voice": "Without one, a lookup on a big table reads every row. With one, the database finds the row directly.",
+     "lines": [{"t": "No index: read every row", "size": 60}, {"t": "Index: find it directly", "size": 60, "accent": true}]},
+    {"voice": "But every insert, update, and delete must also update each index. More indexes means more write work, and more disk.",
+     "lines": [{"t": "Every write updates", "size": 70}, {"t": "every index", "size": 90, "accent": true}]},
+    {"voice": "So index the columns you filter and join on often. Skip the rest, and check with explain.",
+     "lines": [{"t": "Index what you filter on", "size": 60, "accent": true}, {"t": "check with EXPLAIN", "size": 60}],
+     "code": "EXPLAIN SELECT * FROM users\nWHERE email = 'a@b.com';"},
+    {"voice": "Index for the reads you actually have. Save this for the next time a query is slow.",
+     "lines": [{"t": "Index for real reads", "size": 76, "accent": true}, {"t": "save this for later", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
