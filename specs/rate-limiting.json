@@ -1,0 +1,19 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "One client can take your API down. Rate limiting stops that. Here are two ways to do it.",
+     "lines": [{"t": "Rate limiting", "size": 100, "accent": true}, {"t": "two common ways", "size": 60}]},
+    {"voice": "Fixed window counts requests per slot, like 100 a minute. It's simple, but bursts at a window edge can double up.",
+     "lines": [{"t": "Fixed window", "size": 80, "accent": true}, {"t": "simple, edge bursts", "size": 60}],
+     "code": "count[user][minute] += 1\nif count > 100:\n  reject()"},
+    {"voice": "Token bucket refills tokens at a steady rate. Each request spends one. Short bursts are fine, long floods aren't.",
+     "lines": [{"t": "Token bucket", "size": 80, "accent": true}, {"t": "refill steadily, spend one", "size": 56}]},
+    {"voice": "When you reject, return 429 and a Retry-After header, so well-behaved clients know when to come back.",
+     "lines": [{"t": "Return 429", "size": 90, "accent": true}, {"t": "plus Retry-After", "size": 64}],
+     "code": "HTTP/1.1 429 Too Many Requests\nRetry-After: 30"},
+    {"voice": "Limit per user or API key, not just per IP. Save this for the next time you ship a public endpoint.",
+     "lines": [{"t": "Limit per user or key", "size": 64, "accent": true}, {"t": "save this for later", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
