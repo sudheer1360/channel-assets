@@ -1,0 +1,18 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "A user taps pay twice. Do you charge them twice? Not if you use an idempotency key.",
+     "lines": [{"t": "Idempotency keys", "size": 90, "accent": true}, {"t": "no double charges", "size": 60}]},
+    {"voice": "The client sends a unique key with the request. The server stores that key with the result of the first attempt.",
+     "lines": [{"t": "Send a unique key", "size": 70, "accent": true}, {"t": "store it with the result", "size": 56}],
+     "code": "POST /payments\nIdempotency-Key: abc123"},
+    {"voice": "If the same key shows up again, return the saved result. Don't run the charge a second time.",
+     "lines": [{"t": "Same key again?", "size": 80, "accent": true}, {"t": "return the saved result", "size": 60}]},
+    {"voice": "That makes retries safe after a timeout, when the client can't tell if the first request worked.",
+     "lines": [{"t": "Safe retries", "size": 90, "accent": true}, {"t": "even after a timeout", "size": 60}]},
+    {"voice": "Expire old keys after a while. Save this for the next time you build a payment endpoint.",
+     "lines": [{"t": "Expire old keys", "size": 80, "accent": true}, {"t": "save this for later", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
