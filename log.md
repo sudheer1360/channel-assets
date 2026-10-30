@@ -11,3 +11,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | database-indexes | database-indexes | videos/database-indexes.mp4 | 2026-10-28 10:00 | 2026-10-28 16:00 | Scheduled in Metricool |
 | rate-limiting | rate-limiting | videos/rate-limiting.mp4 | 2026-10-29 10:00 | 2026-10-29 16:00 | Scheduled in Metricool |
 | idempotency-keys | idempotency-keys | videos/idempotency-keys.mp4 | 2026-10-30 10:00 | 2026-10-30 16:00 | Scheduled in Metricool |
+| caching-invalidation | caching-invalidation | videos/caching-invalidation.mp4 | 2026-10-31 10:00 | 2026-10-31 16:00 | Scheduled in Metricool |
