@@ -1,0 +1,18 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "A cache makes reads fast. It also gives you a new problem: stale data.",
+     "lines": [{"t": "Caching", "size": 100, "accent": true}, {"t": "fast, but can go stale", "size": 60}]},
+    {"voice": "Cache data that's read often and changes rarely. A product catalog is a good example.",
+     "lines": [{"t": "Read often", "size": 80, "accent": true}, {"t": "changes rarely", "size": 70}]},
+    {"voice": "Don't cache anything that must be exact right now, like an account balance.",
+     "lines": [{"t": "Must be exact?", "size": 80, "accent": true}, {"t": "don't cache it", "size": 70}]},
+    {"voice": "When the data changes, remove the cached copy. Or set a time to live, so it expires on its own.",
+     "lines": [{"t": "Invalidate on write", "size": 70, "accent": true}, {"t": "or set a TTL", "size": 60}],
+     "code": "db.update(item)\ncache.delete(key)\n\ncache.set(key, data, ttl=60)"},
+    {"voice": "Knowing when to invalidate is the hard part. Save this for the next time you add a cache.",
+     "lines": [{"t": "Invalidation is hard", "size": 70, "accent": true}, {"t": "save this for later", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
