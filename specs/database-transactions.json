@@ -1,0 +1,18 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Money leaves one account but never arrives in the other. A transaction prevents that.",
+     "lines": [{"t": "Transactions", "size": 100, "accent": true}, {"t": "all or nothing", "size": 64}]},
+    {"voice": "Wrap related writes in one transaction. They either all succeed together, or none of them do.",
+     "lines": [{"t": "Group related writes", "size": 66, "accent": true}, {"t": "commit or nothing", "size": 56}],
+     "code": "BEGIN;\nUPDATE a SET bal = bal - 50;\nUPDATE b SET bal = bal + 50;\nCOMMIT;"},
+    {"voice": "If any step fails, roll back. The database undoes every change since BEGIN, as if nothing happened.",
+     "lines": [{"t": "Step failed?", "size": 80, "accent": true}, {"t": "ROLLBACK undoes it all", "size": 60}]},
+    {"voice": "Keep transactions short. Long ones hold locks, and other requests have to wait.",
+     "lines": [{"t": "Keep them short", "size": 84, "accent": true}, {"t": "no slow calls inside", "size": 60}]},
+    {"voice": "Save this for the next time two writes must go together.",
+     "lines": [{"t": "Save this", "size": 90, "accent": true}, {"t": "for later", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
