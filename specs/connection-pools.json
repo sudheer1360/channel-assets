@@ -1,0 +1,18 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Your API works fine, then requests start timing out. Often it's the connection pool.",
+     "lines": [{"t": "Random timeouts?", "size": 90, "accent": true}, {"t": "check the connection pool", "size": 56}]},
+    {"voice": "Opening a database connection is slow, so apps keep a small pool and reuse connections.",
+     "lines": [{"t": "Connections are slow", "size": 76, "accent": true}, {"t": "so reuse them from a pool", "size": 60}]},
+    {"voice": "When every connection is busy, requests wait. Slow queries make the line longer, and waiting requests time out.",
+     "lines": [{"t": "Pool is full", "size": 84, "accent": true}, {"t": "requests wait, then time out", "size": 50}]},
+    {"voice": "Always give connections back, even when the query fails.",
+     "lines": [{"t": "Always release", "size": 80, "accent": true}, {"t": "even on errors", "size": 60}],
+     "code": "conn = pool.acquire()\ntry:\n    run_query(conn)\nfinally:\n    pool.release(conn)"},
+    {"voice": "A bigger pool isn't always the fix. Fix slow queries first. Save this for the next time it breaks.",
+     "lines": [{"t": "Bigger pool?", "size": 80, "accent": true}, {"t": "fix slow queries first", "size": 60}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
