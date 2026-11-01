@@ -13,3 +13,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | idempotency-keys | idempotency-keys | videos/idempotency-keys.mp4 | 2026-10-30 10:00 | 2026-10-30 16:00 | Scheduled in Metricool |
 | caching-invalidation | caching-invalidation | videos/caching-invalidation.mp4 | 2026-10-31 10:00 | 2026-10-31 16:00 | Scheduled in Metricool |
 | database-transactions | database-transactions | videos/database-transactions.mp4 | 2026-11-01 10:00 | 2026-11-01 16:00 | Scheduled in Metricool |
+| connection-pools | connection-pools | videos/connection-pools.mp4 | 2026-11-02 10:00 | 2026-11-02 16:00 | Scheduled in Metricool |
