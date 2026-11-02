@@ -1,0 +1,19 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Page two shows the same item twice. Offset pagination can do that.",
+     "lines": [{"t": "Duplicates on page 2?", "size": 84, "accent": true}, {"t": "blame offset pagination", "size": 56}]},
+    {"voice": "Offset says skip a number of rows, then take some. If rows are inserted meanwhile, the pages shift.",
+     "lines": [{"t": "Offset", "size": 96, "accent": true}, {"t": "skip N rows, take 10", "size": 60}, {"t": "new rows shift the pages", "size": 56}],
+     "code": "SELECT * FROM posts\nORDER BY id\nLIMIT 10 OFFSET 20;"},
+    {"voice": "Big offsets are also slow, because the database still walks past every skipped row.",
+     "lines": [{"t": "Big offsets are slow", "size": 76, "accent": true}, {"t": "skipped rows still get read", "size": 56}]},
+    {"voice": "A cursor remembers the last item you saw, and asks for what comes after it.",
+     "lines": [{"t": "Cursor", "size": 96, "accent": true}, {"t": "continue after the last item", "size": 56}],
+     "code": "SELECT * FROM posts\nWHERE id > 30\nORDER BY id\nLIMIT 10;"},
+    {"voice": "Cursors can't jump to page fifty, so use offset for small, simple lists. Save this for the next time paging breaks.",
+     "lines": [{"t": "Small list? Offset is fine", "size": 66, "accent": true}, {"t": "Big or changing? Cursor", "size": 66}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
