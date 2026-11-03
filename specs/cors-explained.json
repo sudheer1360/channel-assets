@@ -1,0 +1,18 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Your API works in Postman, but the browser blocks it. That's CORS.",
+     "lines": [{"t": "Works in Postman,", "size": 80, "accent": true}, {"t": "blocked in the browser?", "size": 70}]},
+    {"voice": "Browsers stop a page from reading responses from another origin, unless the server allows it.",
+     "lines": [{"t": "Different origin?", "size": 84, "accent": true}, {"t": "the browser blocks the read", "size": 56}, {"t": "unless the server allows it", "size": 56}]},
+    {"voice": "The server allows it with a response header that names which origins may read the response.",
+     "lines": [{"t": "The response header", "size": 76, "accent": true}, {"t": "names the allowed origin", "size": 56}],
+     "code": "Access-Control-Allow-Origin:\nhttps://app.example.com"},
+    {"voice": "For some requests, the browser first sends an OPTIONS preflight, asking if the real request is allowed.",
+     "lines": [{"t": "Preflight", "size": 96, "accent": true}, {"t": "an OPTIONS request first", "size": 60}, {"t": "asks: is this allowed?", "size": 56}]},
+    {"voice": "Allow only origins you trust. CORS is a browser rule, not API security. Save this for the next time it breaks.",
+     "lines": [{"t": "Allow trusted origins only", "size": 66, "accent": true}, {"t": "CORS is not API security", "size": 62}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
