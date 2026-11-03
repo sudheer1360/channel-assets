@@ -15,3 +15,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | database-transactions | database-transactions | videos/database-transactions.mp4 | 2026-11-01 10:00 | 2026-11-01 16:00 | Scheduled in Metricool |
 | connection-pools | connection-pools | videos/connection-pools.mp4 | 2026-11-02 10:00 | 2026-11-02 16:00 | Scheduled in Metricool |
 | offset-vs-cursor-pagination | offset-vs-cursor-pagination | videos/offset-vs-cursor-pagination.mp4 | 2026-11-03 10:00 | 2026-11-03 16:00 | Scheduled in Metricool |
+| cors-explained | cors-explained | videos/cors-explained.mp4 | 2026-11-04 10:00 | 2026-11-04 16:00 | Scheduled in Metricool |
