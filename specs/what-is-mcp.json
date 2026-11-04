@@ -1,0 +1,20 @@
+{
+  "kicker": "AI ENGINEERING  /  EXPLAINED",
+  "scenes": [
+    {"voice": "One AI app, ten tools. Ten custom integrations?",
+     "lines": [{"t": "One AI app.", "size": 110, "accent": true}, {"t": "Ten tools.", "size": 110}, {"t": "Ten custom integrations?", "size": 64}]},
+    {"voice": "MCP, the Model Context Protocol, is an open standard for connecting AI apps to tools and data.",
+     "lines": [{"t": "MCP", "size": 120, "accent": true}, {"t": "an open standard", "size": 60}, {"t": "AI app to tools and data", "size": 56}]},
+    {"voice": "A server exposes tools, like search. A client inside the AI app finds them and calls them.",
+     "lines": [{"t": "Server exposes tools", "size": 70, "accent": true}, {"t": "client finds and calls them", "size": 54}],
+     "code": "tools/list\ntools/call"},
+    {"voice": "Build the server once, and any app that speaks MCP can use it. But only connect servers you trust.",
+     "lines": [{"t": "Build once, reuse", "size": 80, "accent": true}, {"t": "only connect servers you trust", "size": 54}]},
+    {"voice": "Have you used an MCP server yet? Tell me in the comments.",
+     "lines": [{"t": "Used an MCP server yet?", "size": 70, "accent": true}, {"t": "Tell me in the comments", "size": 60}]},
+    {"voice": "Save this for the next time you wire up a tool.",
+     "lines": [{"t": "Save this", "size": 100, "accent": true}, {"t": "for the next tool you wire up", "size": 54}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
