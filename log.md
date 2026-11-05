@@ -17,3 +17,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | offset-vs-cursor-pagination | offset-vs-cursor-pagination | videos/offset-vs-cursor-pagination.mp4 | 2026-11-03 10:00 | 2026-11-03 16:00 | Scheduled in Metricool | classic |
 | cors-explained | cors-explained | videos/cors-explained.mp4 | 2026-11-04 10:00 | 2026-11-04 16:00 | Scheduled in Metricool | classic |
 | what-is-mcp | what-is-mcp | videos/what-is-mcp.mp4 | 2026-11-05 10:00 | 2026-11-05 16:00 | Scheduled in Metricool | trending |
+| password-hashing | password-hashing | videos/password-hashing.mp4 | 2026-11-06 10:00 | 2026-11-06 16:00 | Scheduled in Metricool | classic |
