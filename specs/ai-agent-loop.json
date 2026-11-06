@@ -1,0 +1,20 @@
+{
+  "kicker": "AI ENGINEERING  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Your AI agent is just a loop.",
+     "lines": [{"t": "Your AI agent", "size": 110, "accent": true}, {"t": "is just a loop.", "size": 110}]},
+    {"voice": "The model reads the goal and picks a tool. Your code runs that tool and captures the result.",
+     "lines": [{"t": "Model picks a tool", "size": 76, "accent": true}, {"t": "your code runs it", "size": 64}]},
+    {"voice": "The result goes back to the model, which decides the next step. It repeats until the goal is done.",
+     "lines": [{"t": "Result goes back", "size": 70, "accent": true}, {"t": "repeat until done", "size": 56}],
+     "code": "while not done:\n  step = model(history)\n  out = run(step)\n  history.add(out)"},
+    {"voice": "Always cap the loop with a maximum step count and a timeout. Otherwise a confused agent can run forever.",
+     "lines": [{"t": "Cap the loop", "size": 84, "accent": true}, {"t": "max steps + timeout", "size": 60}]},
+    {"voice": "Do you cap your agent loops? Tell me in the comments.",
+     "lines": [{"t": "Do you cap your loops?", "size": 70, "accent": true}, {"t": "Tell me in the comments", "size": 60}]},
+    {"voice": "Save this for the next time an agent misbehaves.",
+     "lines": [{"t": "Save this", "size": 100, "accent": true}, {"t": "for when an agent misbehaves", "size": 52}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
