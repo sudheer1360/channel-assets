@@ -1,0 +1,22 @@
+{
+  "kicker": "BACKEND  /  EXPLAINED",
+  "scenes": [
+    {"voice": "Two users edit the same row at once. Who wins?",
+     "lines": [{"t": "Two saves.", "size": 100, "accent": true}, {"t": "Who wins?", "size": 104}]},
+    {"voice": "The last write wins, and the first change silently vanishes. That's a race condition.",
+     "lines": [{"t": "Last write wins", "size": 84, "accent": true}, {"t": "first change lost", "size": 56}]},
+    {"voice": "Optimistic locking fixes it. Store a version number with each row.",
+     "lines": [{"t": "Add a version", "size": 84, "accent": true}, {"t": "check it on every update", "size": 56}],
+     "code": "UPDATE docs SET body = :b,\nversion = version + 1\nWHERE id = 7 AND version = 3;"},
+    {"voice": "If zero rows changed, someone got there first. Reload and retry, or tell the user.",
+     "lines": [{"t": "0 rows updated?", "size": 84, "accent": true}, {"t": "conflict: reload and retry", "size": 56}]},
+    {"voice": "It's best when conflicts are rare. If they're constant, use a row lock instead.",
+     "lines": [{"t": "Rare conflicts", "size": 84, "accent": true}, {"t": "constant ones: use a row lock", "size": 52}]},
+    {"voice": "Do you use version numbers or row locks? Tell me in the comments.",
+     "lines": [{"t": "Versions or locks?", "size": 88, "accent": true}, {"t": "Tell me in the comments", "size": 60}]},
+    {"voice": "Save this for the next time data goes missing.",
+     "lines": [{"t": "Save this", "size": 96, "accent": true}, {"t": "for when data goes missing", "size": 56}]},
+    {"voice": "If this helped, follow, like, share, and subscribe.",
+     "lines": [{"t": "Follow", "size": 100, "accent": true}, {"t": "Like  /  Share", "size": 80}, {"t": "Subscribe", "size": 80}]}
+  ]
+}
