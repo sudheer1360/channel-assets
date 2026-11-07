@@ -19,3 +19,4 @@ One line per video. The weekly task reads this to know what is already made. New
 | what-is-mcp | what-is-mcp | videos/what-is-mcp.mp4 | 2026-11-05 10:00 | 2026-11-05 16:00 | Scheduled in Metricool | trending |
 | password-hashing | password-hashing | videos/password-hashing.mp4 | 2026-11-06 10:00 | 2026-11-06 16:00 | Scheduled in Metricool | classic |
 | ai-agent-loop | ai-agent-loop | videos/ai-agent-loop.mp4 | 2026-11-07 10:00 | 2026-11-07 16:00 | Scheduled in Metricool | trending |
+| race-conditions-optimistic-locking | race-conditions-optimistic-locking | videos/race-conditions-optimistic-locking.mp4 | 2026-11-08 10:00 | 2026-11-08 16:00 | Scheduled in Metricool | classic |
